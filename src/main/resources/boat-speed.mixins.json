@@ -1,0 +1,11 @@
+{
+	"required": true,
+	"package": "faewulf.boatspeed.mixin",
+	"compatibilityLevel": "JAVA_21",
+	"mixins": [
+      "BoatMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	}
+}

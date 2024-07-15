@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "boat-speed",
+  "version": "${version}",
+  "name": "Speedy boat",
+  "description": "Speedy Boat is a mod that buffs the maximum speed of boats in the water",
+  "authors": [
+    "Faewulf"
+  ],
+  "contact": {
+    "homepage": "https://faewulf.xyz",
+    "sources": "https://github.com/FaeWulf/Speedy-boat"
+  },
+  "license": "CC0-1.0",
+  "icon": "assets/boat-speed/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "faewulf.boatspeed.BoatSpeed"
+    ],
+    "client": [
+      "faewulf.boatspeed.BoatSpeedClient"
+    ]
+  },
+  "mixins": [
+    "boat-speed.mixins.json",
+    {
+      "config": "boat-speed.client.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "fabricloader": ">=0.15.11",
+    "minecraft": "~1.21",
+    "java": ">=21",
+    "fabric-api": "*"
+  }
+}
